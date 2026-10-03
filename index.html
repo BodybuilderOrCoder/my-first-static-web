@@ -1,22 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+
+    <title>VU HIEU | Developer Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Hello World!</h1>
+    <header>
+        <nav>
+            <h2>VU HIEU</h2>
 
-    <p>
-        This is my first static website.
-    </p>
+            <div>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
 
-    <p>
-        Created by Hieu.
-    </p>
+            <button id="themeButton">
+                🌙
+            </button>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero -->
+
+        <section id="hero">
+
+            <h1>Hi, I'm VU HIEU 👋</h1>
+
+            <h2>
+                Information Systems Student
+            </h2>
+
+            <p>
+                I'm currently a student in University of Information Technology, VNU-HCM. I have a passion for fullstack development and I'm always eager to learn new technologies.
+            </p>
+
+            <button id="projectButton">
+                View My Projects
+            </button>
+
+        </section>
+
+
+        <!-- About -->
+
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                I'm an Information Systems student
+                interested in technology, data analysis  and fullstack development.
+            </p>
+
+        </section>
+
+
+        <!-- Skills -->
+
+        <section id="skills">
+
+            <h2>Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git & GitHub</li>
+                <li>SQL</li>
+                <li>Node.js</li>
+            </ul>
+
+        </section>
+
+
+        <!-- Projects -->
+
+        <section id="projects">
+
+            <h2>Projects</h2>
+
+            <div class="project-container">
+
+                <article class="project-card">
+
+                    <h3>My First Website</h3>
+
+                    <p>
+                        My first static website using HTML and CSS.
+                    </p>
+
+                    <p>
+                       Technology: HTML • CSS
+                    </p>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <h3>Hello World API</h3>
+
+                    <p>
+                        A RESTful API built with Node.js and Express.
+                    </p>
+
+                    <p>
+                        Technology: Node.js • Express
+                    </p>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <h3>E-Commerce Project</h3>
+
+                    <p>
+                        An upcoming e-commerce application.
+                    </p>
+
+                    <p>
+                       Technology: React • Node.js • Database
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your name"
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your email"
+                >
+
+                <textarea
+                    id="message"
+                    placeholder="Your message"
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+            <p id="formMessage"></p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 VU HIEU. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
